@@ -14,6 +14,7 @@ app.config["VERBS"] = "static/images/verbs"
 
 @app.route('/')
 def index():
+    print("Hi")
     return render_template('index.html')
 
 port = os.getenv('VCAP_APP_PORT', '8080')
